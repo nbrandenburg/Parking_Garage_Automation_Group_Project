@@ -1,0 +1,87 @@
+<!--
+    Written By: Nicole Brandenburg, Gene Holt, Oakley Cardwell
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User Account</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../userCreation.js" defer></script>
+</head>
+<body>
+<header class="spgmsheader">
+    <div>
+        <h1>SPGMS</h1>
+    </div>
+    <div>
+        <h2>Smart<br> Parking<br> Garage<br> Management<br> System</h2>
+    </div>    
+</header>
+<nav>
+    <a href="/homepage">Home</a>
+    <a href="/reservation">Make a Reservation</a>
+    <a href="/createuser">Create an Account</a>
+    <a href="/userlogin">Login</a>
+</nav>
+<main>
+    <div class="form-container">
+        <h2>Create an Account</h2>
+            <form id="createuserform">
+                <fieldset>
+                    <legend>User Information</legend>
+                    <p>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name = "username">
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="text" id="password" name = "password">
+                    </p>
+                    <p>
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name = "firstname">
+                    </p>
+                    <p>
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name = "lastname">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name = "email">
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" id="phone" name = "phone">
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Vehicle Information</legend>
+                    <p>
+                        <label for="licenseplate">License Plate:</label>
+                        <input type="text" id="licenseplate" name = "licenseplate">
+                    </p>
+                    <p>
+                        <label for="make">Make:</label>
+                        <input type="text" id="make" name = "make">
+                    </p>
+                    <p>
+                        <label for="model">Model:</label>
+                        <input type="text" id="model" name = "model">
+                    </p>
+                    <p>
+                        <label for="color">Color:</label>
+                        <input type="text" id="color" name = "color">
+                    </p>
+                </fieldset>
+                    <br>
+                <button type="submit">Submit</button>
+            </form>
+    </div>
+</main>
+<footer></footer>
+</body>
+</html>

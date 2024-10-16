@@ -1,0 +1,55 @@
+<!--
+    Written By: Nicole Brandenburg
+    Reviewed By: Gene Holt, Oakley Cardwell
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<header class="spgmsheader">
+    <div>
+        <h1>SPGMS</h1>
+    </div>
+    <div>
+        <h2>Smart<br> Parking<br> Garage<br> Management<br> System</h2>
+    </div>
+</header>
+<nav>
+    <a href="/homepage">Home</a>
+    <a href="/reservation">Make a Reservation</a>
+    <a href="/createuser">Create an Account</a>
+    <a href="/userlogin">Login</a>
+</nav>
+<main>
+    <div class="panel-container">
+        <h2>Admin Panel</h2>
+        <fieldset>
+            <legend>Parking Garage Spaces</legend>
+            <form>
+                <label for="numberOfSpaces">Enter the number of Parking Spaces to add or remove:&nbsp&nbsp</label>
+                <input type="number" id="numberOfSpaces" min="1">
+            </form>
+            <div>
+                <button type="button" id="addSpaces">Add Spaces</button>
+                <button type="button" id="removeSpaces">Remove Spaces</button>
+            </div>
+            <p>
+                <div id="spaceCount">Spaces in Garage: <span id="garageSpaces">0</span></div>
+            </p>
+            <p>
+                <div id="occupantCount">Current occupants: <span id="occupants">0</span></div>
+            </p>
+        </fieldset>       
+    </div>
+</main>
+<footer></footer>
+<script src="../adminPanel.js"></script>
+</body>
+</html>

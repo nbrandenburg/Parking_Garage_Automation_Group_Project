@@ -1,0 +1,97 @@
+<!--
+    Written By: Nicole Brandenburg
+    Reviewed By: Gene Holt, Oakley Cardwell
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../ParkingTransactionMethodCalls.js"></script>
+</head>
+<body>
+<header class="spgmsheader">
+    <div>
+        <h1>SPGMS</h1>
+    </div>
+    <div>
+        <h2>Smart<br> Parking<br> Garage<br> Management<br> System</h2>
+    </div>    
+</header>
+<nav>
+    <a href="/homepage">Home</a>
+    <a href="/reservation">Make a Reservation</a>
+    <a href="/createuser">Create an Account</a>
+    <a href="/userlogin">Login</a>
+</nav>
+<main>
+    <div class="reservation-container ">
+        <h2>Make a Reservation</h2>
+            <form id="reservationForm" onsubmit="submitForm(); return false;">
+                <fieldset>
+                    <legend>Start Reservation</legend>
+                    <p>
+                        <label for="startdate">Date: </label>
+                        <input type="date" id="startdate" name = "startdate">
+                    </p>
+                    <p>
+                        <label for="startime">Time: </label>
+                        <input type="time" id="startime" name = "startime">
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>End Reservation</legend>
+                    <p>  
+                        <label for="enddate">Date: </label>
+                        <input type="date" id="enddate" name = "enddate">
+                    </p>
+                    <p>
+                        <label for="endtime">Time: </label>
+                        <input type="time" id="endtime" name = "endtime">
+                    </p>
+                </fieldset>
+                <br>        
+                <fieldset>
+                    <legend>Make this a recurring reservation?</legend>                    
+                        <p>
+                            <label for="reservSun">Sun</label>
+                            <input type="checkbox" id="reservSun" name = "reservSun" value = "yes">
+                        </p>
+                        <p>
+                            <label for="reservMon">Mon</label>
+                            <input type="checkbox" id="reservMon" name = "reservMon" value = "yes">
+                        </p>
+                        <p>
+                            <label for="reservTues">Tue</label>
+                            <input type="checkbox" id="reservTues" name = "reservTues" value = "yes">
+                        </p>
+                        <p>
+                            <label for="reservWed">Wed</label>
+                            <input type="checkbox" id="reservWed" name = "reservWed" value = "yes">
+                        </p>
+                        <p>
+                            <label for="reservThu">Thu</label>
+                            <input type="checkbox" id="reservThu" name = "reservThu" value = "yes">
+                        </p>
+                        <p>
+                            <label for="reservFri">Fri</label>
+                            <input type="checkbox" id="reservFri" name = "reservFri" value = "yes">
+                        </p>
+                        <p>
+                            <label for="reservSat">Sat</label>
+                            <input type="checkbox" id="reservSat" name = "reservSat" value = "yes">
+                        </p>
+                    </fieldset>
+                    <br>
+                <button type="submit">Submit</button>
+            </form>
+
+    </div>
+</main>
+<footer></footer>
+</body>
+</html>

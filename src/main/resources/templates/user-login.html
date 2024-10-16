@@ -1,0 +1,45 @@
+<!--
+    Written By: Oakley Cardwell
+    Reviewed By: Gene Holt, Nicole Brandenburg
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+<header class="spgmsheader">
+    <div>
+        <h1>SPGMS</h1>
+    </div>
+    <div>
+        <h2>Smart<br> Parking<br> Garage<br> Management<br> System</h2>
+    </div>    
+</header>
+<nav>
+    <a href="/homepage">Home</a>
+    <a href="/reservation">Make a Reservation</a>
+    <a href="/createuser">Create an Account</a>
+    <a href="/userlogin">Login</a>
+</nav>
+<main>
+    <div class="login-container">        
+        <h2>User Login</h2>
+        <form action="#" th:action="@{/userlogin}" th:object="${loginRequest}" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name = "username" th:field="*{username}" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name ="password" th:field="*{password}" required>
+
+            <button type="submit" value="Log in">Login</button>
+        </form>
+    </div>
+</main>
+<footer></footer>
+</body>
+</html>
