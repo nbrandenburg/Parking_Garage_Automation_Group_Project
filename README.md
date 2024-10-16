@@ -1,6 +1,9 @@
-# CSCI_441_VC_Team_B Parking Garage Optimizer
+# Parking_Garage_Automation_Group_Project
 ## Introduction
-This project is part of the CSCI_441 course, developed by Team B. It includes a Java-based application for optimizing parking garage operations.
+This project is part of the CSCI_441 Software Engineering course, developed by Team B. 
+Team B consists of Nicole Brandenburg (Team Lead), Oakley Cardwell, and Gene Holt. 
+The repository includes the initial stages of a Java-based application for optimizing parking garage operations. 
+Future possible implementations are outlined in the included report.
 
 ## Getting Started
 ### Prerequisites
@@ -9,8 +12,8 @@ Maven 3.6.3 or higher
 
 ## Running the Application
 ### Clone the Repository
-git clone https://github.com/nbrandenburg/CSCI_441_VC_Team_B.git  
-cd CSCI_441_VC_Team_B  
+git clone https://github.com/nbrandenburg/Parking_Garage_Automation_Group_Project.git  
+cd Parking_Garage_Automation_Group_Project 
 
 ### Run the Main Application
 The main application file is Application.java located in src/main/java/com/ParkingGarageOptimizer/.
@@ -45,4 +48,4 @@ mvn test
 ## Additional Information
 For more details on the project structure and components, refer to the documents in the documents directory.
 The application properties can be configured in src/main/resources/application.properties.
-# Parking_Garage_Automation_Group_Project
+
